@@ -8,6 +8,7 @@ A summary of each **completed** excercise.
 	2. Oefening 1: telLetters
 	3. Oefening 2: javadoc
 	4. Oefening 3: debuggen
+	5. Oefening 4: GUI versie oef 1
 
 ## Todo
 - [x] Theorie H1
