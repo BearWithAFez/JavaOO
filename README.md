@@ -1,5 +1,5 @@
 # JavaOO
-My solutions for the Java OO course
+My solutions, theorie and termen for the Java OO course
 
 ## Subjects
 A summary of each **completed** excercise.
@@ -10,11 +10,16 @@ A summary of each **completed** excercise.
 	4. Oefening 3: debuggen
 
 ## Todo
+- [x] Theorie H1
 - [x] Hoofdstuk 1: Probeer het uit
 - [ ] Hoofdstuk 1: Oefeningen
+- [ ] Theorie H2
 - [ ] Hoofdstuk 2: Probeer het uit
 - [ ] Hoofdstuk 2: Oefeningen
+- [ ] Theorie H3
 - [ ] Hoofdstuk 3: Probeer het uit
 - [ ] Hoofdstuk 3: Oefeningen
+- [ ] Theorie H4
 - [ ] Hoofdstuk 4: Probeer het uit
 - [ ] Hoofdstuk 4: Oefeningen
+- [ ] Termen
