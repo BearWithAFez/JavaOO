@@ -23,7 +23,6 @@
  */
 
 /**
- *
  * @author Dwight Van der Velpen
  */
 public class Spel {
@@ -46,6 +45,7 @@ public class Spel {
     public void resetSpel(){
         // Zet te raden getal naar een getal tussen Kleinste en grootste
         teRadenGetal = (int) ((GROOTSTE - KLEINSTE + 1) * Math.random() + KLEINSTE);
+        gespeeldeBeurten = 0;
     }
     
     public int doeGok(int gok){
@@ -57,5 +57,17 @@ public class Spel {
         if (gok < teRadenGetal) return HOGER;        
         if (gok > teRadenGetal) return LAGER;        
         return CORRECT;
+    }
+    
+    public int geefResterendeBeurten(){
+        return MAX_BEURTEN - gespeeldeBeurten;
+    }
+    
+    public int geefGespeeldeBeurten(){
+        return gespeeldeBeurten;
+    }
+    
+    public int geefTeRadenGetal(){
+        return teRadenGetal;
     }
 }
