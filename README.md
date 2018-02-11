@@ -23,4 +23,7 @@ A summary of each **completed** excercise.
 - [ ] Theorie H4
 - [ ] Hoofdstuk 4: Probeer het uit
 - [ ] Hoofdstuk 4: Oefeningen
-- [ ] Termen
+- [x] Termen H1
+- [ ] Termen H2
+- [ ] Termen H3
+- [ ] Termen H4
