@@ -3,10 +3,11 @@ My solutions for the Java OO course
 
 ## Subjects
 A summary of each **completed** excercise.
-1. Hoofdstuk 1
+1. Hoofdstuk 1: Inleiding
 	1. Probeer het uit: Hoger Lager
 	2. Oefening 1: telLetters
 	3. Oefening 2: javadoc
+	4. Oefening 3: debuggen
 
 ## Todo
 - [x] Hoofdstuk 1: Probeer het uit
