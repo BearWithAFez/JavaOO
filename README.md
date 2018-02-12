@@ -25,5 +25,5 @@ A summary of each **completed** excercise.
 - [ ] Hoofdstuk 4: Oefeningen
 - [x] Termen H1
 - [x] Termen H2
-- [ ] Termen H3
+- [x] Termen H3
 - [x] Termen H4

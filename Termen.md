@@ -1,4 +1,5 @@
 # Termen in Java OO
+Geen enkel van de volgende termen zijn per-se te kennen maar vallen wel in het dagdagelijks jargon van een programmeur. Het is dus best de betekenis van deze te kennen. Het is alsnog vrijblijvend en gebruikt als een hulp voor het lezen van de theorie. 
 ## H1: Inleiding
 Term | Verklaring
 --- | ---
@@ -31,7 +32,7 @@ Term | Verklaring
 **Getter** | Ook wel *Accessor* genoemd, een methode die een veld naar buiten verleent, zonder rekenening te houden met de AS.
 **Setter** | Ook wel *Mutuator* genoemd, een methode die een veld aanpast zonder rekenening te houden met de AS.
 **Object methode** | Een methode die uitgevoerd moet worden in combinatie met een Object (member operator).
-**Klasse methode** | Ook wel *Statisch*;Een methode die uitgevoerd moet worden in combinatie met een Klasse (member operator).
+**Klasse methode** | Ook wel *Statische methode*;Een methode die uitgevoerd moet worden in combinatie met een Klasse (member operator).
 **Black box** | Een term die ook buiten Java word gebruikt voor een constructie waarvan men de werking niet kent.
 **Exceptie** | Een code interuptor die opgesmeten word bij onverwachte situaties. (Zelf gekozen of autonoom)
 **Try-Catch** | Code structuur die gemaakt is om gevoelige code af te bakenen. Deze stopt dan ook excepties, en voert dan de catch uit.
@@ -41,6 +42,22 @@ Term | Verklaring
 ## H3: Hergebruiken van klassen
 Term | Verklaring
 --- | ---
+**Compositie** | Het principe van een veld op te vullen met een ander object. (heeft-een relatie)
+**Overerving** | Het principe van een bestaande klasse uit te breiden. (is-een relatie)
+**Method overiding** | Het concept van methodes van de superklasse te herschrijven met de zelfde signatuur. Niet te verwarren met *Method overloading*.
+**Extends** | Keyword gebruikt om aan te tonen waar de huidige klasse van afgeleid is. Komt na de klasse naam in de klasse definiëring.
+**Super** | Keyword om aan te duiden dat we teruggrijpen naar de van-afgeleide klasse. Zo kan men met de memberoperator ook zijn methoden en velden aanspreken. De super word ook gebruikt als term om naar de van-afgeleide klasse te benoemen.
+**Access specifier** | Een concept van keywords die aangeven welke code toegang heeft tot dit veld/methode. Deze zijn dan ook respectievelijk *Private, None, Protected, Public*.
+**Protected** | AS die tussen private en public ligt. De toegang word ook verleend aan afgeleide klassen.
+**Het type Object** | De "moeder-klasse" hiervan zijn alle andere klassen afgeleid. Deze bevat dus velden die elke klasse implementeerd.
+**ToString** | Eén van de moeder-methoden van Object. De taak van deze methode is het textueel weergeven van een object van de klasse.
+**Equals** | Eén van de moeder-methoden van Object. De taak van deze methode is het vergelijken van 2 objecten van de zelfde klasse.
+**Casten** | Het concept om een object of waarde van type te veranderen. Denk aan integers naar longs maar ook Strings naar user-defined klassen.
+**Downcast** | Een downcast is een term om van een super klasse te casten naar een afgeleide ervan. 
+**Upcast** | Een upcast is een term om van een afgeleide klasse terug (tijdelijk) te casten naar de super.
+**Impliciet** | Impliciet is een term die ook buiten Java gebruikt wordt. Deze betekend "zonder uitleg" dit kunnen dus vanzelfsprekende casts zijn zoals een int naar float.
+**Expliciet** | Expliciet is een term die ook buiten Java gebruikt wordt. Deze betekend "met uitleg" dit is dus het specifieren naar welk type er gecast word.
+**InstanceOf** | Een operator die nuttig is om te controleren of een object van een bepaalde klasse is. Geeft een booleans resultaat terug.
 ## H4: Arrays van objecten
 Term | Verklaring
 --- | ---
