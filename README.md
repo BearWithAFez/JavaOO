@@ -20,13 +20,16 @@ A summary of each **completed** excercise.
 	4. Oefening 3: debuggen
 	5. Oefening 4: GUI versie oef 1
 	6. Oefening 5: Hoger Lager reverse
+2. Hoofdstuk 2: Klassen en objecten
+	1. Probeer het uit: Vierkantsvergelijking
+	2. Oefening 1: Boom
 
 ## Todo
 - [x] Theorie H1
 - [x] Hoofdstuk 1: Probeer het uit
 - [x] Hoofdstuk 1: Oefeningen
 - [x] Theorie H2
-- [ ] Hoofdstuk 2: Probeer het uit
+- [x] Hoofdstuk 2: Probeer het uit
 - [ ] Hoofdstuk 2: Oefeningen
 - [x] Theorie H3
 - [ ] Hoofdstuk 3: Probeer het uit
