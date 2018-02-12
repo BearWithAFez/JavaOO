@@ -1,7 +1,17 @@
 # JavaOO
 My solutions, theorie and termen for the Java OO course
 
-## Subjects
+## Topics
+Hoofdstuk 1: Inleiding
+Hoofdstuk 2: Klassen en objecten
+Hoofdstuk 3: Hergebruik van klassen
+Hoofdstuk 4: Arrays van objecten
+Hoofdstuk 5: Goeie code schrijven
+Bijlage A: Code library
+Bijlage B: Referentie
+Bijlage C: ULM
+
+## Excercises
 A summary of each **completed** excercise.
 1. Hoofdstuk 1: Inleiding
 	1. Probeer het uit: Hoger Lager
@@ -23,6 +33,8 @@ A summary of each **completed** excercise.
 - [ ] Theorie H4
 - [ ] Hoofdstuk 4: Probeer het uit
 - [ ] Hoofdstuk 4: Oefeningen
+- [ ] Theorie H5
+- [ ] Bijlagen
 - [x] Termen H1
 - [x] Termen H2
 - [x] Termen H3
