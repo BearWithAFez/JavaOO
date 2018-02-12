@@ -36,8 +36,9 @@ public class HogerLager extends javax.swing.JFrame {
         
         // Maak een Spel object aan
         spel = new Spel();
-        
-        // initialiseer het te raden getal
+        jButtonCorrect.setEnabled(false);
+        jButtonLager.setEnabled(false);
+        jButtonHoger.setEnabled(false);
     }
 
     /**
@@ -50,10 +51,10 @@ public class HogerLager extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jTextFieldInput = new javax.swing.JTextField();
-        jButtonGok = new javax.swing.JButton();
+        jButtonHoger = new javax.swing.JButton();
         jLabelOutput = new javax.swing.JLabel();
+        jButtonCorrect = new javax.swing.JButton();
+        jButtonLager = new javax.swing.JButton();
         jButtonAfsluiten = new javax.swing.JButton();
         jButtonNieuw = new javax.swing.JButton();
 
@@ -61,49 +62,58 @@ public class HogerLager extends javax.swing.JFrame {
 
         jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        jLabel1.setText("Geef een getal in:");
-
-        jButtonGok.setText("Waag een gok!");
-        jButtonGok.addActionListener(new java.awt.event.ActionListener() {
+        jButtonHoger.setText("Hoger!");
+        jButtonHoger.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonGokActionPerformed(evt);
+                jButtonHogerActionPerformed(evt);
             }
         });
 
-        jLabelOutput.setText(" ");
+        jLabelOutput.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelOutput.setText("Kies, mentaal, een getal tussen 0 en 500 en klik op Nieuw.");
+
+        jButtonCorrect.setText("Correct!");
+        jButtonCorrect.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonCorrectActionPerformed(evt);
+            }
+        });
+
+        jButtonLager.setText("Lager!");
+        jButtonLager.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonLagerActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(20, 20, 20)
+                .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabelOutput)
+                    .addComponent(jLabelOutput, javax.swing.GroupLayout.DEFAULT_SIZE, 358, Short.MAX_VALUE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel1)
+                        .addComponent(jButtonLager, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButtonGok)
-                            .addComponent(jTextFieldInput, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(71, Short.MAX_VALUE))
+                        .addComponent(jButtonCorrect, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButtonHoger, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jTextFieldInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButtonGok)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(jButtonHoger)
+                    .addComponent(jButtonCorrect)
+                    .addComponent(jButtonLager))
+                .addGap(34, 34, 34)
                 .addComponent(jLabelOutput)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(15, Short.MAX_VALUE))
         );
-
-        jLabel1.getAccessibleContext().setAccessibleName("InvoerBijTekst");
-        jLabel1.getAccessibleContext().setAccessibleDescription("");
 
         jButtonAfsluiten.setText("Afsluiten");
         jButtonAfsluiten.addActionListener(new java.awt.event.ActionListener() {
@@ -149,52 +159,50 @@ public class HogerLager extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButtonGokActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGokActionPerformed
-        // neem de numerieke waarde van de input en krijg het resultaat ervan
-        int gok = Integer.parseInt(jTextFieldInput.getText());
-        int result = spel.doeGok(gok);
-        int teRadenGetal = spel.geefTeRadenGetal();
-        int restBeurten = spel.geefResterendeBeurten();
-        int gespBeurten = spel.geefGespeeldeBeurten();
-        
-        // maximaal aantal beurten bereikt
-        if(restBeurten == 0){
-            jLabelOutput.setText("Helaas, je beurten zijn op! Het te raden getal was " + teRadenGetal + ";");
-            
-            // disable de gok knop en beïnding
-            jButtonGok.setEnabled(false);
-            return;
-        }
-        
-        // verwerk resultaat
-        switch (result) {
-            case Spel.ONGELDIG:
-                jLabelOutput.setText("Ongeldige ingave!");
-                break;
-            case Spel.HOGER:
-                jLabelOutput.setText("Hoger!");
-                break;
-            case Spel.LAGER:
-                jLabelOutput.setText("Lager!");
-                break;
-            default:
-                jLabelOutput.setText("Proficiat! Je hebt het getal geraden in " + gespBeurten + " beurten!");
-                // disable de gok knop
-                jButtonGok.setEnabled(false);
-                break;
-        }
-    }//GEN-LAST:event_jButtonGokActionPerformed
+    private void jButtonHogerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonHogerActionPerformed
+        spel.getPlayerResult(1);
+        doeBeurt();
+    }//GEN-LAST:event_jButtonHogerActionPerformed
 
     private void jButtonNieuwActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonNieuwActionPerformed
         spel.resetSpel();
         jLabelOutput.setText("");
-        jButtonGok.setEnabled(true);
+        jButtonHoger.setEnabled(true);
+        jButtonCorrect.setEnabled(true);
+        jButtonLager.setEnabled(true);        
+        
+        int gok = spel.doeGok();            
+        jLabelOutput.setText("De computer gokt: " + gok + ". Wat is uw antwoord?");
     }//GEN-LAST:event_jButtonNieuwActionPerformed
 
     private void jButtonAfsluitenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAfsluitenActionPerformed
         System.exit(0);
     }//GEN-LAST:event_jButtonAfsluitenActionPerformed
 
+    private void jButtonLagerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLagerActionPerformed
+        spel.getPlayerResult(-1);
+        doeBeurt();
+    }//GEN-LAST:event_jButtonLagerActionPerformed
+
+    private void jButtonCorrectActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCorrectActionPerformed
+            jLabelOutput.setText("Jammer. U verloor...");
+            jButtonCorrect.setEnabled(false);
+            jButtonLager.setEnabled(false);
+            jButtonHoger.setEnabled(false);
+    }//GEN-LAST:event_jButtonCorrectActionPerformed
+
+    private void doeBeurt(){
+        if( spel.geefResterendeBeurten() == 0){
+            jLabelOutput.setText("Gefeliciteerd. U won!");
+            jButtonCorrect.setEnabled(false);
+            jButtonLager.setEnabled(false);
+            jButtonHoger.setEnabled(false);
+        } else{
+            int gok = spel.doeGok();            
+            jLabelOutput.setText("De computer gokt: " + gok + ". Wat is uw antwoord?");
+        }
+    }
+    
     /**
      * @param args the command line arguments
      */
@@ -232,11 +240,11 @@ public class HogerLager extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonAfsluiten;
-    private javax.swing.JButton jButtonGok;
+    private javax.swing.JButton jButtonCorrect;
+    private javax.swing.JButton jButtonHoger;
+    private javax.swing.JButton jButtonLager;
     private javax.swing.JButton jButtonNieuw;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabelOutput;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextFieldInput;
     // End of variables declaration//GEN-END:variables
 }

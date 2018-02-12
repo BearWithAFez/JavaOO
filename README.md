@@ -19,11 +19,12 @@ A summary of each **completed** excercise.
 	3. Oefening 2: javadoc
 	4. Oefening 3: debuggen
 	5. Oefening 4: GUI versie oef 1
+	6. Oefening 5: Hoger Lager reverse
 
 ## Todo
 - [x] Theorie H1
 - [x] Hoofdstuk 1: Probeer het uit
-- [ ] Hoofdstuk 1: Oefeningen
+- [x] Hoofdstuk 1: Oefeningen
 - [x] Theorie H2
 - [ ] Hoofdstuk 2: Probeer het uit
 - [ ] Hoofdstuk 2: Oefeningen

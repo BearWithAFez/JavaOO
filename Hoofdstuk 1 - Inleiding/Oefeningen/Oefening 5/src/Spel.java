@@ -27,36 +27,32 @@
  */
 public class Spel {
     // Constanten Spel
-    static final int KLEINSTE = 0;
-    static final int GROOTSTE = 100;
-    static final int MAX_BEURTEN = 10;
-    
-    // Constanten Resultaten
-    static final int ONGELDIG = -1;
-    static final int CORRECT = 0;
-    static final int HOGER = 1;
-    static final int LAGER = 2;
-    
+    private static final int KLEINSTE = 0;
+    private static final int GROOTSTE = 500;
+    private static final int MAX_BEURTEN = 10;
+        
     // Velden
-    int teRadenGetal;
-    int gespeeldeBeurten;
+    private int laatstGeradenGetal;
+    private int gespeeldeBeurten;
+    private int huidigMinima;
+    private int huidigMaxima;
     
     // Methoden
     public void resetSpel(){
-        // Zet te raden getal naar een getal tussen Kleinste en grootste
-        teRadenGetal = (int) ((GROOTSTE - KLEINSTE + 1) * Math.random() + KLEINSTE);
+        // Reset het spel en de velden
         gespeeldeBeurten = 0;
+        laatstGeradenGetal = -1;
+        huidigMaxima = GROOTSTE;
+        huidigMinima = KLEINSTE;
     }
     
-    public int doeGok(int gok){
-        // Controleer validiteit
-        if(gok < KLEINSTE || gok > GROOTSTE) return ONGELDIG;
+    public int doeGok(){
+        // Controleer beurten
+        if(gespeeldeBeurten == MAX_BEURTEN) return -1;        
         
         gespeeldeBeurten++;
-        
-        if (gok < teRadenGetal) return HOGER;        
-        if (gok > teRadenGetal) return LAGER;        
-        return CORRECT;
+        laatstGeradenGetal = (int) ((huidigMaxima - huidigMinima + 1) * Math.random() + huidigMinima);
+        return laatstGeradenGetal;
     }
     
     public int geefResterendeBeurten(){
@@ -67,7 +63,16 @@ public class Spel {
         return gespeeldeBeurten;
     }
     
-    public int geefTeRadenGetal(){
-        return teRadenGetal;
+    public void getPlayerResult(int result){
+        switch (result){
+            case -1:
+                huidigMaxima = laatstGeradenGetal;
+                break;
+            case 1:
+                huidigMinima = laatstGeradenGetal;
+                break;
+            default:
+                break;
+        }
     }
 }
