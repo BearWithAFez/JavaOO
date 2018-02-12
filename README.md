@@ -2,14 +2,14 @@
 My solutions, theorie and termen for the Java OO course
 
 ## Topics
-Hoofdstuk 1: Inleiding
-Hoofdstuk 2: Klassen en objecten
-Hoofdstuk 3: Hergebruik van klassen
-Hoofdstuk 4: Arrays van objecten
-Hoofdstuk 5: Goeie code schrijven
-Bijlage A: Code library
-Bijlage B: Referentie
-Bijlage C: ULM
+- Hoofdstuk 1: Inleiding
+- Hoofdstuk 2: Klassen en objecten
+- Hoofdstuk 3: Hergebruik van klassen
+- Hoofdstuk 4: Arrays van objecten
+- Hoofdstuk 5: Goeie code schrijven
+- Bijlage A: Code library
+- Bijlage B: Referentie
+- Bijlage C: ULM
 
 ## Excercises
 A summary of each **completed** excercise.
