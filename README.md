@@ -24,17 +24,17 @@ A summary of each **completed** excercise.
 - [x] Theorie H1
 - [x] Hoofdstuk 1: Probeer het uit
 - [ ] Hoofdstuk 1: Oefeningen
-- [ ] Theorie H2
+- [x] Theorie H2
 - [ ] Hoofdstuk 2: Probeer het uit
 - [ ] Hoofdstuk 2: Oefeningen
-- [ ] Theorie H3
+- [x] Theorie H3
 - [ ] Hoofdstuk 3: Probeer het uit
 - [ ] Hoofdstuk 3: Oefeningen
-- [ ] Theorie H4
+- [x] Theorie H4
 - [ ] Hoofdstuk 4: Probeer het uit
 - [ ] Hoofdstuk 4: Oefeningen
-- [ ] Theorie H5
-- [ ] Bijlagen
+- [x] Theorie H5
+- [x] Bijlagen
 - [x] Termen H1
 - [x] Termen H2
 - [x] Termen H3
