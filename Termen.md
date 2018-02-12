@@ -41,3 +41,10 @@ Term | Verklaring
 ## H3: Hergebruiken van klassen
 Term | Verklaring
 --- | ---
+## H4: Arrays van objecten
+Term | Verklaring
+--- | ---
+**ArrayList** | Een collectie object dat intern word gerepresenteerd als een Array. Kan aanzien worden als een dynamisch schalende array.
+**Interface** | Een lege *klasse* die gebruikt wordt om de signatuur vast te leggen zonder inhoud. Kan aanzien worden als een contract van velden en methoden die verwacht worden indien geimplementeerd.
+**Icompareable** | De compareable interface. Indien geimplementeerd maakt die het mogelijk met een equals methode 2 objecten te vergelijken en dus ook te sorteren.
+**Implements** | Keyword gebruikt om interfaces te gebruiken. Word na overervingen geplaatst in de klasse benaming.

@@ -26,4 +26,4 @@ A summary of each **completed** excercise.
 - [x] Termen H1
 - [x] Termen H2
 - [ ] Termen H3
-- [ ] Termen H4
+- [x] Termen H4
