@@ -23,6 +23,7 @@ A summary of each **completed** excercise.
 2. Hoofdstuk 2: Klassen en objecten
 	1. Probeer het uit: Vierkantsvergelijking
 	2. Oefening 1: Boom
+	3. Oefening 2: Bankrekening
 
 ## Todo
 - [x] Theorie H1
