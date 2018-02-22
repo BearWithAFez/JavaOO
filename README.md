@@ -1,4 +1,4 @@
-# JavaOO
+# JavaO
 My solutions, theorie and termen for the Java OO course
 
 ## Topics
@@ -24,6 +24,9 @@ A summary of each **completed** excercise.
 	1. Probeer het uit: Vierkantsvergelijking
 	2. Oefening 1: Boom
 	3. Oefening 2: Bankrekening
+	4. Oefening 3: Tijd
+	5. Oefening 4: Persoon
+	7. Oefening 6: Bankrekening v2
 
 ## Todo
 - [x] Theorie H1

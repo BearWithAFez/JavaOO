@@ -7,9 +7,16 @@ public class Bankrekening {
     private String naam;
 
     public Bankrekening(String rekeningNummer, String naam) {
+        if (!IsGeldigRekNr(rekeningNummer)) throw new IllegalArgumentException("Foutief formaat rekening nummer!!");
         this.rekeningNummer = rekeningNummer;
         this.saldo = 0;
         this.naam = naam;
+    }
+    
+    public static boolean IsGeldigRekNr(String rekNr){
+        if(rekNr.length() != 14) return false;
+        if(rekNr.charAt(3) != '-' || rekNr.charAt(11) != '-') return false;
+        return true;
     }
     
     public void stort(double bedrag){
