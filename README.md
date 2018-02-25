@@ -26,6 +26,7 @@ A summary of each **completed** excercise.
 	3. Oefening 2: Bankrekening
 	4. Oefening 3: Tijd
 	5. Oefening 4: Persoon
+	6. Oefening 5: Meerkeuzevraag
 	7. Oefening 6: Bankrekening v2
 
 ## Todo
