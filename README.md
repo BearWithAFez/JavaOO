@@ -28,6 +28,8 @@ A summary of each **completed** excercise.
 	5. Oefening 4: Persoon
 	6. Oefening 5: Meerkeuzevraag
 	7. Oefening 6: Bankrekening v2
+	8. Oefening 7: Concat
+	9. Oefening 8: Encrypt & Decrypt
 
 ## Todo
 - [x] Theorie H1
