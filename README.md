@@ -30,23 +30,5 @@ A summary of each **completed** excercise.
 	7. Oefening 6: Bankrekening v2
 	8. Oefening 7: Concat
 	9. Oefening 8: Encrypt & Decrypt
-
-## Todo
-- [x] Theorie H1
-- [x] Hoofdstuk 1: Probeer het uit
-- [x] Hoofdstuk 1: Oefeningen
-- [x] Theorie H2
-- [x] Hoofdstuk 2: Probeer het uit
-- [ ] Hoofdstuk 2: Oefeningen
-- [x] Theorie H3
-- [ ] Hoofdstuk 3: Probeer het uit
-- [ ] Hoofdstuk 3: Oefeningen
-- [x] Theorie H4
-- [ ] Hoofdstuk 4: Probeer het uit
-- [ ] Hoofdstuk 4: Oefeningen
-- [x] Theorie H5
-- [x] Bijlagen
-- [x] Termen H1
-- [x] Termen H2
-- [x] Termen H3
-- [x] Termen H4
+	10. Oefening 9: Datum
+	11. Oefening 10: Breuk
