@@ -37,6 +37,10 @@ A summary of each **completed** excercise.
 3. Hoofdstuk 3: Hergebruik van klassen
 	1. Probeer het uit: Boompje
 	2. Oefening 1: Punt, toString en equals
+	3. Oefening 2: Cirkel
+	4. Oefening 3: HighscoreItem
+	5. Oefening 4: Java API String en ArrayList
+
 
 ## Contact
 If for whatever reason you need to contact me:  
