@@ -15,14 +15,14 @@ Solutions solved by Dwight Van der Velpen.
 
 ## Solutions of excercises
 A summary of each **completed** excercise.
-**1. Hoofdstuk 1: Inleiding**  
+1. Hoofdstuk 1: Inleiding
 	1. Probeer het uit: Hoger Lager
 	2. Oefening 1: telLetters
 	3. Oefening 2: javadoc
 	4. Oefening 3: debuggen
 	5. Oefening 4: GUI versie oef 1
 	6. Oefening 5: Hoger Lager reverse
-**2. Hoofdstuk 2: Klassen en objecten**  
+2. Hoofdstuk 2: Klassen en objecten
 	1. Probeer het uit: Vierkantsvergelijking
 	2. Oefening 1: Boom
 	3. Oefening 2: Bankrekening
@@ -34,7 +34,7 @@ A summary of each **completed** excercise.
 	9. Oefening 8: Encrypt & Decrypt
 	10. Oefening 9: Datum
 	11. Oefening 10: Breuk
-**3. Hoofdstuk 3: Hergebruik van klassen**  
+3. Hoofdstuk 3: Hergebruik van klassen
 	1. Probeer het uit: Boompje
 
 ## Contact
