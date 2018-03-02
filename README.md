@@ -17,9 +17,9 @@ Solutions solved by Dwight Van der Velpen.
 A summary of each **completed** excercise.
 1. Hoofdstuk 1: Inleiding
 	1. Probeer het uit: Hoger Lager
-	2. Oefening 1: telLetters
-	3. Oefening 2: javadoc
-	4. Oefening 3: debuggen
+	2. Oefening 1: Tel Letters
+	3. Oefening 2: Javadoc
+	4. Oefening 3: Debuggen
 	5. Oefening 4: GUI versie oef 1
 	6. Oefening 5: Hoger Lager reverse
 2. Hoofdstuk 2: Klassen en objecten
@@ -36,6 +36,7 @@ A summary of each **completed** excercise.
 	11. Oefening 10: Breuk
 3. Hoofdstuk 3: Hergebruik van klassen
 	1. Probeer het uit: Boompje
+	2. Oefening 1: Punt, toString en equals
 
 ## Contact
 If for whatever reason you need to contact me:  
