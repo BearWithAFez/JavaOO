@@ -26,7 +26,5 @@ public class HighscoreItem {
     @Override
     public String toString() {
         return naam + " - " + score;
-    }
-    
-    
+    }    
 }
