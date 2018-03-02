@@ -15,27 +15,27 @@ Solutions solved by Dwight Van der Velpen.
 
 ## Solutions of excercises
 A summary of each **completed** excercise.
-1. Hoofdstuk 1: Inleiding
-	0. Probeer het uit: Hoger Lager
-	1. Oefening 1: telLetters
-	2. Oefening 2: javadoc
-	3. Oefening 3: debuggen
-	4. Oefening 4: GUI versie oef 1
-	5. Oefening 5: Hoger Lager reverse
-2. Hoofdstuk 2: Klassen en objecten
-	0. Probeer het uit: Vierkantsvergelijking
-	1. Oefening 1: Boom
-	2. Oefening 2: Bankrekening
-	3. Oefening 3: Tijd
-	4. Oefening 4: Persoon
-	5. Oefening 5: Meerkeuzevraag
-	6. Oefening 6: Bankrekening v2
-	7. Oefening 7: Concat
-	8. Oefening 8: Encrypt & Decrypt
-	9. Oefening 9: Datum
-	10. Oefening 10: Breuk
-3. Hoofdstuk 3: Hergebruik van klassen
-	0. Probeer het uit: Boompje
+**1. Hoofdstuk 1: Inleiding**  
+	1. Probeer het uit: Hoger Lager
+	2. Oefening 1: telLetters
+	3. Oefening 2: javadoc
+	4. Oefening 3: debuggen
+	5. Oefening 4: GUI versie oef 1
+	6. Oefening 5: Hoger Lager reverse
+**2. Hoofdstuk 2: Klassen en objecten**  
+	1. Probeer het uit: Vierkantsvergelijking
+	2. Oefening 1: Boom
+	3. Oefening 2: Bankrekening
+	4. Oefening 3: Tijd
+	5. Oefening 4: Persoon
+	6. Oefening 5: Meerkeuzevraag
+	7. Oefening 6: Bankrekening v2
+	8. Oefening 7: Concat
+	9. Oefening 8: Encrypt & Decrypt
+	10. Oefening 9: Datum
+	11. Oefening 10: Breuk
+**3. Hoofdstuk 3: Hergebruik van klassen**  
+	1. Probeer het uit: Boompje
 
 ## Contact
 If for whatever reason you need to contact me:  
