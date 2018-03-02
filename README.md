@@ -38,6 +38,6 @@ A summary of each **completed** excercise.
 	0. Probeer het uit: Boompje
 
 ## Contact
-If for whatever reason you need to contact me:
-[mail](Dwight.vandervelpen@hotmail.com)
-[Facebook](facebook.com/Dfr34k)
+If for whatever reason you need to contact me:  
+<Dwight.vandervelpen@hotmail.com>  
+[Facebook](https://www.facebook.com/Dfr34k)
