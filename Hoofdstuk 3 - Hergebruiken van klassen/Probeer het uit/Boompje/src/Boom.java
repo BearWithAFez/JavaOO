@@ -24,7 +24,7 @@ public class Boom {
     public boolean groei(){
         if (hoogte + GROEI_STAP <= MAX_HOOGTE) {
             this.hoogte += GROEI_STAP;
-            return true;
+            return hoogte + GROEI_STAP <= MAX_HOOGTE;
         }
         return false;
     }
@@ -32,7 +32,7 @@ public class Boom {
     public boolean snoei(){
         if (hoogte - GROEI_STAP > 0) {
             this.hoogte -= GROEI_STAP;
-            return true;
+            return hoogte - GROEI_STAP > 0;
         }
         return false;
     }
