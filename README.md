@@ -40,6 +40,8 @@ A summary of each **completed** excercise.
 	3. Oefening 2: Cirkel
 	4. Oefening 3: HighscoreItem
 	5. Oefening 4: Java API String en ArrayList
+	6. Oefening 5: Subklassen testen
+	7. Oefening 6: Uitgave, Tijdschrift en Boek
 
 
 ## Contact
