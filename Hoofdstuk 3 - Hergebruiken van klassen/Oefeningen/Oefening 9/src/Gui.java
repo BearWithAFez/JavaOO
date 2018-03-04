@@ -1,25 +1,13 @@
-import java.io.*;
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
- *
- * @author dwigh
+ * @author DVDV
  */
 public class Gui extends javax.swing.JFrame {
-    private Quotations quotations;
 
     /**
      * Creates new form Gui
      */
     public Gui() {
         initComponents();
-        quotations = new Quotations((String) new File("quotes.txt").getAbsolutePath());
-        updateQuote(quotations.getNextQuote());
     }
 
     /**
@@ -31,29 +19,23 @@ public class Gui extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabelQuote = new javax.swing.JLabel();
-        jLabelAuthor = new javax.swing.JLabel();
-        jButtonNext = new javax.swing.JButton();
+        spelbord1 = new Spelbord();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Quotes");
+        setTitle("4 op een rij");
 
-        jLabelQuote.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
-        jLabelQuote.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelQuote.setText("\"The quote will be here.\"");
-        jLabelQuote.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        spelbord1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        jLabelAuthor.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
-        jLabelAuthor.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabelAuthor.setText("-The author will be here");
-
-        jButtonNext.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jButtonNext.setText("Another!");
-        jButtonNext.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonNextActionPerformed(evt);
-            }
-        });
+        javax.swing.GroupLayout spelbord1Layout = new javax.swing.GroupLayout(spelbord1);
+        spelbord1.setLayout(spelbord1Layout);
+        spelbord1Layout.setHorizontalGroup(
+            spelbord1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 372, Short.MAX_VALUE)
+        );
+        spelbord1Layout.setVerticalGroup(
+            spelbord1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 270, Short.MAX_VALUE)
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -61,30 +43,19 @@ public class Gui extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabelAuthor, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabelQuote, javax.swing.GroupLayout.DEFAULT_SIZE, 583, Short.MAX_VALUE)
-                    .addComponent(jButtonNext, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(spelbord1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabelQuote, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabelAuthor, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButtonNext, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(spelbord1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jButtonNextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonNextActionPerformed
-        updateQuote(quotations.getNextQuote());
-    }//GEN-LAST:event_jButtonNextActionPerformed
 
     /**
      * @param args the command line arguments
@@ -122,13 +93,6 @@ public class Gui extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButtonNext;
-    private javax.swing.JLabel jLabelAuthor;
-    private javax.swing.JLabel jLabelQuote;
+    private Spelbord spelbord1;
     // End of variables declaration//GEN-END:variables
-
-    private void updateQuote(Quote nextQuote) {
-        jLabelAuthor.setText("- " + nextQuote.getAuteur());
-        jLabelQuote.setText("\"" + nextQuote.getQuote()+ "\"");
-    }
 }

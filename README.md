@@ -44,6 +44,7 @@ A summary of each **completed** excercise.
 	7. Oefening 6: Uitgave, Tijdschrift en Boek
 	8. Oefening 7: Grafiek
 	9. Oefening 8: Quotes
+	10. Oefening 9: 4 op een rij Part 1
 
 ## Contact
 If for whatever reason you need to contact me:  
