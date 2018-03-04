@@ -43,6 +43,7 @@ A summary of each **completed** excercise.
 	6. Oefening 5: Subklassen testen
 	7. Oefening 6: Uitgave, Tijdschrift en Boek
 	8. Oefening 7: Grafiek
+	9. Oefening 8: Quotes
 
 ## Contact
 If for whatever reason you need to contact me:  
