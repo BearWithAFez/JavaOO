@@ -42,7 +42,7 @@ A summary of each **completed** excercise.
 	5. Oefening 4: Java API String en ArrayList
 	6. Oefening 5: Subklassen testen
 	7. Oefening 6: Uitgave, Tijdschrift en Boek
-
+	8. Oefening 7: Grafiek
 
 ## Contact
 If for whatever reason you need to contact me:  
