@@ -46,6 +46,7 @@ A summary of each **completed** excercise.
 	9. Oefening 8: Quotes
 	10. Oefening 9: 4 op een rij Part 1
 	11. Oefening 10: 4 op een rij Part 2
+5. Project: Vier op een Rij met AI
 
 ## Contact
 If for whatever reason you need to contact me:  
