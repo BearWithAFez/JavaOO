@@ -12,6 +12,7 @@ public class Spelbord extends javax.swing.JPanel {
     private static final int TO_WIN = 4;
     private int[][] schijven;
     private int currentPlayer;
+    private static final boolean AI = true;
     
     /**
      * Creates new form Spelbord
@@ -46,6 +47,17 @@ public class Spelbord extends javax.swing.JPanel {
     public void clickEvent(java.awt.event.MouseEvent evt){
         int kolom = evt.getX() / (getWidth() / KOLOMMEN);
         if(werpSchijf(currentPlayer, kolom)){
+            currentPlayer = (currentPlayer == 1) ? 2 : 1;
+            repaint();
+        }
+        
+        if(giveWinner() != 0) return;
+        
+        if(currentPlayer == 2 && AI){
+            int rndKol = -1;
+            do {                
+                rndKol = (int) (Math.random() * KOLOMMEN);
+            } while (!werpSchijf(currentPlayer, rndKol));
             currentPlayer = (currentPlayer == 1) ? 2 : 1;
             repaint();
         }
@@ -129,6 +141,118 @@ public class Spelbord extends javax.swing.JPanel {
                     current = schijven[i][j];
                     streak = 1;
                 }
+            }
+            streak = 0;
+            current = 0;
+        }
+        
+        // Hor
+        for (int j = 0; j < RIJEN; j++) {
+            for (int i = 0; i < KOLOMMEN; i++) {
+                if(schijven[i][j] == 0){                    
+                    streak = 0;
+                    current = 0;
+                }
+                if(schijven[i][j] == current){
+                    streak++;
+                    if (streak == TO_WIN) return current;
+                }
+                else{
+                    current = schijven[i][j];
+                    streak = 1;
+                }
+            }
+            streak = 0;
+            current = 0;
+        }
+        
+        // Diag 1
+        for( int i = 0 ; i < KOLOMMEN; i++ ) {
+            int I = i;
+            int j = 0;
+            while(I >= 0 && j < RIJEN){
+                if(schijven[I][j] == 0){                    
+                    streak = 0;
+                    current = 0;
+                }
+                if(schijven[I][j] == current){
+                    streak++;
+                    if (streak == TO_WIN) return current;
+                }
+                else{
+                    current = schijven[I][j];
+                    streak = 1;
+                }
+                I--;
+                j++;
+            }
+            streak = 0;
+            current = 0;
+        }
+        for(int j = 0 ; j < RIJEN; j++ ) {
+            int J = j;
+            int i = KOLOMMEN-1;
+            while(i >= 0 && J < RIJEN){
+                if(schijven[i][J] == 0){                    
+                    streak = 0;
+                    current = 0;
+                }
+                if(schijven[i][J] == current){
+                    streak++;
+                    if (streak == TO_WIN) return current;
+                }
+                else{
+                    current = schijven[i][J];
+                    streak = 1;
+                }
+                i--;
+                J++;
+            }
+            streak = 0;
+            current = 0;
+        }
+        
+        // Diag 2
+        for( int i = KOLOMMEN-1 ; i >= 0; i--) {
+            int I = i;
+            int j = 0;
+            while(I < KOLOMMEN && j < RIJEN){
+                if(schijven[I][j] == 0){                    
+                    streak = 0;
+                    current = 0;
+                }
+                if(schijven[I][j] == current){
+                    streak++;
+                    if (streak == TO_WIN) return current;
+                }
+                else{
+                    current = schijven[I][j];
+                    streak = 1;
+                }
+                I++;
+                j++;
+            }
+            streak = 0;
+            current = 0;
+        }
+        for(int j = 0 ; j < RIJEN; j++ ) {
+            int J = j;
+            int i = 0;
+            while(i < KOLOMMEN && J < RIJEN){
+                if(schijven[i][J] == 0){                    
+                    streak = 0;
+                    current = 0;
+                }
+                if(schijven[i][J] == current){
+                    streak++;
+                    if (streak == TO_WIN) return current;
+                }
+                else{
+                    current = schijven[i][J];
+                    streak = 1;
+                }
+                i++;
+                J++;
             }
             streak = 0;
             current = 0;
